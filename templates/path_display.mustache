@@ -1,0 +1,12 @@
+{{#paths}}
+  <div {{#id}}id="{{id}}"{{/id}}>
+    {{#steps}}
+      {{^cssClass}}
+        ➤ {{name}}
+      {{/cssClass}}
+      {{#cssClass}}
+        <div class="{{cssClass}}">➤ {{name}}</div>
+      {{/cssClass}}
+    {{/steps}}
+  </div>
+{{/paths}}
